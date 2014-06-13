@@ -6,11 +6,11 @@
     "start": "coffee server/app.js"
   },
   "dependencies": {
+    "canvas": "^1.1.4",
+    "coffee-script": "~1.6.3",
+    "dropbox": "~0.10.2",
     "express": "3.4.0",
     "mongoose": "~3.8.1",
-    "nodemailer": "~0.5.8",
-    "canvas-heroku": "~1.1.2",
-    "dropbox": "~0.10.2",
-    "coffee-script": "~1.6.3"
+    "nodemailer": "~0.5.8"
   }
 }
