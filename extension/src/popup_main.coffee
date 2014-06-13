@@ -1,5 +1,5 @@
-# tpmmServer = "http://localhost:5000"
-tpmmServer = "http://tagpro-mod-manager.herokuapp.com"
+tpmmServer = "http://localhost:5000"
+# tpmmServer = "http://tagpro-mod-manager.herokuapp.com"
 
 qwest.get("#{tpmmServer}/mods").success ->
 	mods = this.response

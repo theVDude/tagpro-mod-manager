@@ -51,33 +51,34 @@ modSchema.methods.getThumbnail = (callback) ->
 			tiles.src = objfiles.files.tiles
 
 			# Draw Tiles
-			ctx.drawSprite tiles, 2, 2, -0.5, 0
-			ctx.drawSprite tiles, 2, 2, 0.5, 0
-			ctx.drawSprite tiles, 2, 2, 1.5, 0
+			ctx.drawSprite tiles, 13, 4, -0.5, 0
+			ctx.drawSprite tiles, 13, 4, 0.5, 0
+			ctx.drawSprite tiles, 13, 4, 1.5, 0
 
-			ctx.drawSprite tiles, 2, 2, -0.5, 1
-			ctx.drawSprite tiles, 2, 2, 0.5, 1
-			ctx.drawSprite tiles, 2, 2, 1.5, 1
+			ctx.drawSprite tiles, 13, 4, -0.5, 1
+			ctx.drawSprite tiles, 13, 4, 0.5, 1
+			ctx.drawSprite tiles, 13, 4, 1.5, 1
+			ctx.drawSprite tiles, 13, 4, 2.5, 1
 
-			ctx.drawSprite tiles, 2, 2, -0.5, 2
-			ctx.drawSprite tiles, 2, 2, 0.5, 2
-			ctx.drawSprite tiles, 2, 2, 1.5, 2
-			ctx.drawSprite tiles, 2, 2, 2.5, 2
+			ctx.drawSprite tiles, 13, 4, -0.5, 2
+			ctx.drawSprite tiles, 13, 4, 0.5, 2
+			ctx.drawSprite tiles, 13, 4, 1.5, 2
+			ctx.drawSprite tiles, 13, 4, 2.5, 2
 
 			# Right wall
-			ctx.drawSprite tiles, 4, 2, 2.5, 0
-			ctx.drawSprite tiles, 2, 8, 2.5, 1
+			ctx.drawSprite tiles, 11, 5, 2.5, 0
+			ctx.drawSprite tiles, 11, 6, 2.5, 1
 
 			# Juke juice
-			ctx.drawSprite tiles, 8, 8, -0.5, 0
+			ctx.drawSprite tiles, 12, 4, -0.5, 0
 
 			bp = {x: 0.9, y: 0.84}
 
 			# Ball (red)
-			ctx.drawSprite tiles, 6, 3, bp.x, bp.y
+			ctx.drawSprite tiles, 0, 14, bp.x, bp.y
 
 			# Flag (blue)
-			ctx.drawSprite tiles, 8, 0, bp.x + 0.33, bp.y - 0.82
+			ctx.drawSprite tiles, 1, 15, bp.x + 0.33, bp.y - 0.82
 		
 			canvas.toDataURL (err, url) ->
 				throw new Error "Error rendering image" if err

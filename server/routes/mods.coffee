@@ -6,7 +6,7 @@ utils      = require "../utils"
 # Email setup
 mail_transport = nodemailer.createTransport "Direct", {}
 admin_emails = [
-	"jamie@kwiius.com"
+	"rb.cubed@gmail.com"
 ]
 
 # Import schemas
