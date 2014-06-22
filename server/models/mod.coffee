@@ -51,47 +51,38 @@ modSchema.methods.getThumbnail = (callback) ->
       tiles.src = objfiles.files.tiles
 
       # Draw Tiles
-      console.log("drawing tiles!")
       ctx.drawSprite tiles, 13, 4, -0.5, 0
       ctx.drawSprite tiles, 13, 4, 0.5, 0
       ctx.drawSprite tiles, 13, 4, 1.5, 0
 
-      console.log("drawing tiles!")
       ctx.drawSprite tiles, 13, 4, -0.5, 1
       ctx.drawSprite tiles, 13, 4, 0.5, 1
       ctx.drawSprite tiles, 13, 4, 1.5, 1
       ctx.drawSprite tiles, 13, 4, 2.5, 1
 
-      console.log("drawing tiles!")
       ctx.drawSprite tiles, 13, 4, -0.5, 2
       ctx.drawSprite tiles, 13, 4, 0.5, 2
       ctx.drawSprite tiles, 13, 4, 1.5, 2
       ctx.drawSprite tiles, 13, 4, 2.5, 2
 
       # Right wall
-      console.log("drawing walls!")
       ctx.drawSprite tiles, 11, 5, 2.5, 0
       ctx.drawSprite tiles, 11, 6, 2.5, 1
 
       # Juke juice
-      console.log("drawing powerup!")
       ctx.drawSprite tiles, 12, 4, -0.5, 0
 
       bp = {x: 0.9, y: 0.84}
 
-      console.log("bp.x: " + bp.x + " bp.y: " + bp.y)
 
       # Ball (red)
-      console.log("drawing a red ball!")
       ctx.drawSprite tiles, 14, 0, bp.x, bp.y
 
       # Flag (blue)
-      console.log("drawing a flag!")
       ctx.drawSprite tiles, 15, 1, bp.x + 0.33, bp.y - 0.82
 
       canvas.toDataURL (err, url) ->
         throw new Error "Error rendering image" if err
-        console.log("todataURL")
 
         thumbnailCache[objfiles._id] = url
         callback url
